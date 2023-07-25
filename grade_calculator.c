@@ -12,4 +12,10 @@
  */
 int main(void)
 {
+	float gade_percent;
+
+
+	printf("what is your grade percent? ");
+	scanf("%f", &grade_percent);
+
 

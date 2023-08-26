@@ -17,6 +17,8 @@ while choice != 5 :
     if choice == 1 :
         item= input('enter the item you want to add: ')
         items.append(item)
+        price= input(f'enter the price of {item}: ')
+        prices.append(price)
         print (f'{item} has been added to cart.')
 
     elif choice == 2:
@@ -26,6 +28,7 @@ while choice != 5 :
         print ('items in your cart are:')
         for i in range(len(items)) :
             cart= items[i]
+            cost= prices[i]
             i += 1
-            print(f'{i}.  {cart} --  ')
+            print(f'{i}.  {cart} -- #{cost.2f} ')
         print()
